@@ -126,10 +126,6 @@
 		font-size: 43px;
 	}
 
-	.swiper-container {
-  	height: 55%;
- 	}
-
 	.authentic__link {
 		padding: 14px 19px 13px;
 	}
@@ -198,6 +194,7 @@
 	.navbar-nav {
 		position: absolute;
 		right: 0;
+		top: 0;
 	}
 
 
