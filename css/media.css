@@ -269,7 +269,7 @@
 
 	.about__block {
 		padding: 5rem;
-		padding-left: 10rem;
+		padding-left: 8rem;
 	}
 	
 	.section__title_about span {
@@ -312,10 +312,6 @@
 		font-size: 28px;
 	}
 
-	.swiper-container {
-	  	height: 95%;
-	}
-
 	.potential .section__title span {
     margin-left: 5rem;
     margin-bottom: 1.5rem;
@@ -338,8 +334,6 @@
 	.potential_block {
     padding: 3.5rem;
 	}
-
-
 
 	.section__title_services,
 	.section__title_about,

@@ -4,7 +4,14 @@
 	  $(this).find('.dropdown-menu').stop(true, true).fadeOut(150);
 	});
 	
-
+	$('.slider__block').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+	});
+	
 	window.onload = function(){
 
 	  var toggle = document.getElementById('toggle');
@@ -35,12 +42,3 @@
 		  	}
 		 }  
 	}
-
-	 var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        effect: 'fade'
-    });

@@ -54,12 +54,14 @@ header {
 }
 
 .social__item_fb {
+	display: block;
 	background: url('../img/social_sprite-full.png') no-repeat 0 -45px;
 	width: 32px;
 	height: 32px;
 }
 
 .social__item_tw {
+	display: block;
 	background: url('../img/social_sprite-full.png') no-repeat -39px -45px;
 	width: 32px;
 	height: 32px;
@@ -138,6 +140,7 @@ header {
 
 .nav-link {
 	text-transform: uppercase;
+	border-bottom: 8px solid transparent;
 	font-size: 14px;
 	font-family: 'Lato Bold';
 	text-align: center;
@@ -154,25 +157,6 @@ header {
   color: #fff;
 }
 
-.swiper-container {
-   	width: 100%;
-  	height: 35%;
- }
-
-.swiper-slide {
-  	background-position: center;
- 		background-size: cover;
- 		position: relative;
-		z-index: 1;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    width: 27px;
-    height: 44px;
-    -moz-background-size: 27px 44px;
-    -webkit-background-size: 27px 44px;
-    background-size: 12px 44px;
-}
 
 .slider {
 	position: relative;
@@ -180,9 +164,15 @@ header {
 	background-color: #f0f0f0;
 	padding-bottom: 25px;
 }
-.slider__img {
-	width: 100%;	
+
+.slider__img { 
+    width: 100%
 }
+
+.slick-next {
+    right: 25px;
+}
+
 
 .slider__title {
 	position: absolute;
