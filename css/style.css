@@ -156,7 +156,7 @@ header {
 
 .swiper-container {
    	width: 100%;
-  	height: 45%;
+  	height: 35%;
  }
 
 .swiper-slide {
@@ -164,6 +164,14 @@ header {
  		background-size: cover;
  		position: relative;
 		z-index: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 27px;
+    height: 44px;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 12px 44px;
 }
 
 .slider {
