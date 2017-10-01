@@ -170,7 +170,12 @@ header {
 }
 
 .slick-next {
-    right: 25px;
+   right: 25px;
+}
+
+.slick-prev {
+   left: 25px;
+   z-index: 999;
 }
 
 
