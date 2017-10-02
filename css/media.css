@@ -1,5 +1,7 @@
 @media only screen and (min-width : 480px) {
 	
+	/*Увеличивем шрифты и отступы элементов для разрешения от 480px*/
+
 	.authentic__link {
 		padding: 8px 13px 7px;
 		font-size: 15px;
@@ -19,13 +21,6 @@
 
 	.slider__text {
 		font-size: 30px;
-	}
-
-	.swiper-container {
-  	height: 50%;
- 	}
-	.swiper-slide {
-  	background-position: center;
 	}
 
 	.potential_block,
@@ -51,12 +46,6 @@
 		background-size: cover;
 	}
 
-	/*.customer__info {
-		position: absolute;
-		top: 10%;
-    right: 10%;
-	}*/
-
 	.customer .section__title_customer,
 	.customer .section__title_customer span, 
 	.customer .section__text_customer {
@@ -75,6 +64,7 @@
 
 @media only screen and (min-width : 768px) {
 
+	/*Уменьшаем высоту footer-а*/
 	.wrapper:after {
 		content: "";
 		height: 250px;
@@ -86,6 +76,7 @@
 		background-color: #262626;	
 	}
 	
+	/*Добавляем крупные иконки для соц сетей из спрайта*/
 	.social__item_fb {
 		background: url('../img/social_sprite-full.png') no-repeat -75px -45px;
 		width: 42px;
@@ -109,6 +100,8 @@
 		width: 43px;
 		height: 43px;
 	}
+
+	/*Увеличивем шрифты и отступы элементов для разрешения от 768px*/
 
 	.logo_header {
 		font-size: 69px;
@@ -178,6 +171,8 @@
 
 @media only screen and (min-width : 992px) {
 
+	/*Перебиваем бутстраповские классы для горизонтального меню*/
+
 	.nav-link {
 	  display: block;
 	  padding: 1.6em 1em 1.35em;
@@ -187,16 +182,11 @@
 		transition: 0s;
 	}
 
-	.logo_header {
-		font-size: 89px;
-	}
-
 	.navbar-nav {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
-
 
 	.navbar-toggleable-md {
     -webkit-box-align: end;
@@ -206,10 +196,9 @@
 	}
 
 	.navbar-toggleable-md .navbar-nav .nav-link {
-	    padding-right: 1.5rem;
-	    padding-left: 1.5rem;
+	   padding-right: 1.5rem;
+	   padding-left: 1.5rem;
 	}
-
 	
 	.logo_header {
 		font-size: 72px;
@@ -219,6 +208,7 @@
 		font-size: 52px;
 	}
 	
+	/*Стилизируем выпадаюший список меню*/
 	.dropdown-menu {
 		padding: 1rem 2.5rem 3rem 2rem;
 		background-color: #262626;
@@ -238,6 +228,7 @@
 		background-color: transparent;
 	}
 	
+	/*Добавляем прозрачность фону элементов блока Потенциальных возможностей*/
 	.potential_block {
 		background-color: rgba(238, 49, 57, 0.8);
 	}
@@ -247,23 +238,13 @@
 	.potential_block_calling {
 		background-color: rgba(48, 48, 48, 0.8);
 	}
+
 	.slider {
 		position: relative;
 		z-index: 1;
 	}
 
-	.potential__mobile {
-		display: none;
-	}
-
-	.potential {
-		background-color: transparent;
-		position: absolute;
-		bottom: -15px;
-		left: 0;
-		z-index: 199;
-	}
-
+	/*Увеличивем шрифты и отступы элементов для разрешения от 992px*/
 	.about__block {
 		padding: 5rem;
 		padding-left: 8rem;
@@ -283,11 +264,11 @@
 	.footer__block .logo_footer {
     font-size: 46px;
 	}
-
-
 }
 
 @media only screen and (min-width : 1200px) {
+
+	/*Увеличивем шрифты и отступы элементов для разрешения от 1200px*/
 	
 	body {
 		font-size: 14px;
@@ -307,6 +288,15 @@
 	
 	.section__title span {
 		font-size: 28px;
+	}
+
+	/*Помещаем блок Потенциальных возможностей на слайдер*/
+	.potential {
+		background-color: transparent;
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		z-index: 199;
 	}
 
 	.potential .section__title span {
@@ -329,7 +319,7 @@
 	}
 
 	.potential_block {
-    padding: 3.5rem;
+    padding: 3rem;
 	}
 
 	.section__title_services,

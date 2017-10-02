@@ -5,17 +5,26 @@ body {
 	font-family: 'Lato Regular';
 }
 
+/* Используовалась методология адаптивной вёрстки Mobile first, 
+поэтому все стили задавались для разрешения 340px*/
+
+/*Прижимаем футер жёстко к низу страницы*/
+
 .wrapper {
 	position: relative;
   min-height: 100%;
   overflow: hidden;
 }
 
+/*Создаём вспомогательный блок, с высотой, как у футера */
+
 .wrapper:after {
 	content: "";
 	height: 350px;
 	display: block;
 }
+
+/*Выставляем отрицательный margin на высоту вспомогательного блока*/
 
 .page-footer{
 	height: 350px;
@@ -27,9 +36,12 @@ a:hover {
 	text-decoration: none;
 }
 
+
 header {
 	background-color: #ededed;
 }
+
+/*Задаём стили верхнего хедера*/
 
 .header__top {
 	overflow: hidden;
@@ -39,6 +51,8 @@ header {
 .header__top .col-4 {
 	padding-right: 10px;
 }
+
+/*Стилизируем иконки соц сетей*/
 
 .social__header {
 	float: left;
@@ -52,6 +66,8 @@ header {
 	display: inline-block;
 	margin-right: 2px;
 }
+
+/*Используем спрайт для отображения иконок соц сетей*/
 
 .social__item_fb {
 	display: block;
@@ -79,6 +95,8 @@ header {
 	height: 32px;
 }
 
+/*Оформление блока регистрации*/
+
 .authentic__header {
 	float: right;
 }
@@ -95,6 +113,8 @@ header {
 	font-size: 12px;
   font-family: "Lato"; 
   color: #333;
+
+  /*Используем вендорные префиксы для кросбраузерности*/
   border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
@@ -110,12 +130,13 @@ header {
 	background-color: #fff;
 }
 
+/*Оформление логотипа*/
+
 .logo_header {
 	margin: 0;
 	padding: 0;
 	padding-left: 30px;
 	padding-right: 30px;
-
 	float: left;
 	color: #ee1c25;
 	font-size: 32px;
@@ -124,9 +145,13 @@ header {
   text-transform: uppercase;
 }
 
+/*Стилизируем первую букву лого, используя псевдоэлемент*/
 .logo_header:first-letter {
 	color: #333;
 }
+
+/*Перебиваем стили bootstrap в меню, не использовал для этого собственные классы,
+чтобы не увеличивать длину кода, повышая вес селекторов родительскими элементами*/
 
 .bg-faded {
     background-color: #fff;
@@ -157,6 +182,7 @@ header {
   color: #fff;
 }
 
+/*Стилизируем slick-слайдер*/
 
 .slider {
 	position: relative;
@@ -219,9 +245,13 @@ header {
 	margin: 0;
 }
 
+/*Стилизируем блок потенциальных возможностей в слайдере*/
+
 .potential {
 	background-color: #f0f0f0;
 	margin: 0;
+	/*Использовалась единица измерения rem, чтобы задавать отступы относительно шрифта html,
+	и чтобы элементам не зависеть друг от друга*/
 	padding-bottom: 1.5rem;
 }
 
@@ -234,6 +264,8 @@ header {
 	background-color: #ee3139;
 }
 
+/*Все элементы с названием блока section используются неоднократно на всей странице,
+лишь с некоторыми изменениями модификаторов в цветовой палитре, поэтому получили "внеблоковый статус"*/ 
 .section__title {
 	color: #fff;
 	font-family: 'Lato Bold';
@@ -254,6 +286,8 @@ header {
 	margin-left: 2.5rem;
 }
 
+/*Используем псевдоклассы, чтобы не засорять html, 
+добавляем иконки из библиотеки font-awesome*/
 h2.section__title:before {
 	content: "\f1ec";
   margin-right: 3px;
@@ -282,7 +316,7 @@ h2.section__title:before {
 	color: #333;
 }
 
-
+/*Модификаторы задают цветовые отличия блокам Потенциальных возможностей*/
 .potential__block_terms {
 	background-color: #ddd;
 }
@@ -308,6 +342,7 @@ h2.section__title_calling:before {
   content: "\f095";
 }
 
+/*Стилизация блока Сервисы доставки*/
 .services {
 	padding: 1.5rem 0;
 }
@@ -378,6 +413,7 @@ h2.section__title_about:before {
 	left: 19%;
 }
 
+/*Стилизация блока Клиента*/
 .customer {
 	background-color: #f2f2f2;
 	padding: 1.5rem;
@@ -419,6 +455,7 @@ h2.section__title_about:before {
 	font-size: 9px;
 }
 
+/*Стилизация блока О нас*/
 .about__block,
 .delivery__block {
 	padding: 1.5rem;
@@ -434,6 +471,8 @@ h2.section__title_about:before {
 	padding: 0;
 	text-align: left;
 	list-style-type: none; 
+
+	/*Задаём имя счётчика нумерованного списка*/
   counter-reset: num;
 }
 
@@ -446,10 +485,14 @@ h2.section__title_about:before {
 .delivery__item:last-child {
 	border: none;
 }
-
+/*Стилизия нумерованного списка*/
 .delivery__link:before {
+	/*Выводим значение счётчика*/
   content: '0' counter(num) '. '; 
+
+  /*Увеличиваем на единицу*/
   counter-increment: num;
+
   color: #d0cfcf;
 	font-size: 22px;
 	font-family: 'Lato Bold';
@@ -469,6 +512,8 @@ h2.section__title_about:before {
 .delivery__link:hover:before  {
 	color: #ee1c25;
 }
+
+/*Стилизируем footer*/
 
 .footer__title {
 	text-transform: uppercase;
