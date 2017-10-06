@@ -330,16 +330,17 @@ h2.section__title:before {
 	font-family: 'Lato Light';
 }
 
-.section__text:after {
-  content: "\f101";
-  margin-left: 4px;
-  color: #fff;
-  font-family: FontAwesome;
-  font-size: 12px;
+.section__detail {
+	color: #fff;
+	font-size: 12px;
 }
 
-.potential__block_terms .section__text:after{
+.potential__block_terms .section__detail {
 	color: #333;
+}
+
+.potential__block_terms .section__detail:hover {
+	color: #fff;
 }
 
 /*Модификаторы задают цветовые отличия блокам Потенциальных возможностей*/

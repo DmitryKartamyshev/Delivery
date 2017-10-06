@@ -247,6 +247,11 @@
 		z-index: 1;
 	}
 
+	.section__detail {
+    vertical-align: middle;
+    font-size: 22px;
+	}
+
 	/*Увеличивем шрифты и отступы элементов для разрешения от 992px*/
 	.about__block {
 		padding: 5rem;
@@ -319,6 +324,10 @@
 	.section__text {
 		line-height: 1.7;
 	}
+
+	.section__detail {
+		font-size: 26px;
+	}	
 
 	.section__text:after {
     font-size: 24px;
