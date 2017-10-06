@@ -242,6 +242,7 @@
 	}
 
 	.slider {
+		padding-bottom: 0;
 		position: relative;
 		z-index: 1;
 	}
@@ -274,6 +275,10 @@
 	
 	body {
 		font-size: 14px;
+	}
+	
+	.slider__title {
+		top: 13%;
 	}
 
 	.slider__text {
