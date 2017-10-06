@@ -12,7 +12,7 @@
 	  cssEase: 'linear'
 	});
 	
-	window.onload = function(){
+		window.onload = function(){
 
 	  var toggle = document.getElementById('toggle');
 

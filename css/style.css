@@ -67,32 +67,29 @@ header {
 	margin-right: 2px;
 }
 
-/*Используем спрайт для отображения иконок соц сетей*/
+/*Используем шрифт fontAwesome для отображения иконок соц сетей*/
 
 .social__item_fb {
-	display: block;
-	background: url('../img/social_sprite-full.png') no-repeat 0 -45px;
-	width: 32px;
-	height: 32px;
+		display: block;
+    color: #bbbbbb;
+    font-size: 21px;
+    background-color: #fff;
+    padding: 1px 10px;
+    border-radius: 50%;
 }
 
 .social__item_tw {
-	display: block;
-	background: url('../img/social_sprite-full.png') no-repeat -39px -45px;
-	width: 32px;
-	height: 32px;
+		display: block;
+    color: #bbbbbb;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 2px 7px;
+    border-radius: 50%;
 }
 
-.social__item_fb:hover {
-	background: url('../img/social_sprite-full.png') no-repeat 0 -11px;
-	width: 32px;
-	height: 32px;
-}
-
+.social__item_fb:hover,
 .social__item_tw:hover {
-	background: url('../img/social_sprite-full.png') no-repeat -39px -11px;
-	width: 32px;
-	height: 32px;
+	color: #ee1c25;
 }
 
 /*Оформление блока регистрации*/
@@ -145,9 +142,15 @@ header {
   text-transform: uppercase;
 }
 
+
 /*Стилизируем первую букву лого, используя псевдоэлемент*/
 .logo_header:first-letter {
 	color: #333;
+}
+
+.logo_link,
+.logo_link:hover {
+	color: #ee1c25;
 }
 
 /*Перебиваем стили bootstrap в меню, не использовал для этого собственные классы,
@@ -192,18 +195,41 @@ header {
 }
 
 .slider__img { 
-    width: 100%
+  width: 100%
 }
 
 .slick-next {
-   right: 25px;
+  right: 3px;
 }
 
 .slick-prev {
-   left: 25px;
-   z-index: 999;
+  left: -20px;
+  z-index: 999;
 }
 
+.slick-next:before {
+  content: "\f105";
+  padding: 5px 7px 5px 9px;
+  font-family: FontAwesome;
+  font-size: 20px; 
+  color: #fff;
+  background-color: #303030;
+}
+
+.slick-prev:after {
+  content: "\f104";
+  padding: 5px 9px 5px 7px;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #fff;
+  background-color: #303030;
+}
+
+.slick-next:hover:before,
+.slick-next:hover:after {
+	color: #ee1c25;
+	background-color: #fff;
+}
 
 .slider__title {
 	position: absolute;
