@@ -282,14 +282,6 @@
     font-size: 22px;
 	}
 
-	.parallax { 
-    height: 250px; 
-    background-attachment: fixed;
-    background-position: 23%;
-    background-repeat: no-repeat;
-    background-size: cover;
-	}
-
 	/*Увеличивем шрифты и отступы элементов для разрешения от 992px*/
 	.about__block {
 		padding: 6rem 5rem;
@@ -330,7 +322,7 @@
 	}
 
 	.section__title {
-    font-size: 42px;
+		font-size: 42px;
 	}
 
 	h2.section__title:before {
@@ -361,13 +353,13 @@
 	}
 
 	.potential .section__title span {
-    margin-left: 5rem;
-    margin-bottom: 1.5rem;
+		margin-left: 5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.potential .section__title_deliv span {
-    margin-left: 6rem;
-    margin-bottom: 1.5rem;
+		margin-left: 6rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.section__text {
@@ -384,7 +376,7 @@
 	}
 
 	.potential_block {
-    padding: 3rem;
+		padding: 3rem;
 	}
 
 	.services {
@@ -447,7 +439,7 @@
 	}
 
 	.parallax { 
-    height: 330px; 
+		height: 330px; 
 	}
 
 }
