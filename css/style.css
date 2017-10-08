@@ -108,9 +108,8 @@ header {
 	background-color: #dadada;
 	padding: 9px 10px 8px;
 	font-size: 12px;
-  font-family: "Lato"; 
   color: #333;
-
+	font-family: 'Lato Regular';
   /*Используем вендорные префиксы для кросбраузерности*/
   border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
@@ -118,10 +117,12 @@ header {
 	border: 0px solid #000000;
 }
 
-.authentic__link_reg {
+.authentic__link:hover {
 	background-color: #ee1c25;
 	color: #fff;
 }
+
+.authentic__link
 
 .header__main {
 	background-color: #fff;
@@ -149,8 +150,10 @@ header {
 }
 
 .logo_link,
-.logo_link:hover {
+.logo_link:hover,
+.logo_link:focus {
 	color: #ee1c25;
+	text-decoration: none;
 }
 
 /*Перебиваем стили bootstrap в меню, не использовал для этого собственные классы,
@@ -331,6 +334,7 @@ h2.section__title:before {
 }
 
 .section__detail {
+	vertical-align: middle;
 	color: #fff;
 	font-size: 12px;
 }
@@ -427,6 +431,10 @@ h2.section__title_about:before {
 	text-transform: uppercase;
 }
 
+.section__name:hover {
+	color: #333;
+}
+
 .section__text_black {
 	color: #333;
 }
@@ -481,6 +489,12 @@ h2.section__title_about:before {
 	font-family: 'Lato Regular';
 	font-size: 9px;
 }
+
+.section__link:hover {
+	background-color: #333;
+	color: #ee1c25;
+}
+
 
 /*Стилизация блока О нас*/
 .about__block,
@@ -581,6 +595,13 @@ h2.section__title_about:before {
 	margin-bottom: 10px;
 }
 
+.logo__link_footer,
+.logo__link_footer:hover,
+.logo__link_footer:focus {
+	color: #ee1c25;
+	text-decoration: none;
+}
+
 .footer__block .logo_footer:first-letter {
 	color: #fff;
 }
@@ -591,7 +612,8 @@ h2.section__title_about:before {
 }
 
 .copyright__text {
-	color: #fff;
+	color: #747474;
+	font-family: 'Lato Light';
 }
 
 .copyright{

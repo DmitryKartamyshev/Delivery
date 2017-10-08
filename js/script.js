@@ -12,33 +12,26 @@
 	  cssEase: 'linear'
 	});
 	
-		window.onload = function(){
 
-	  var toggle = document.getElementById('toggle');
+	$(document).ready(function() {
 
+		var toggle = document.getElementById('toggle');
 		var subMenu = document.getElementsByClassName('dropdown-menu');
+		var navMenu = document.getElementsByClassName('nav-link');
+		var navActive = document.querySelector('nav__active');
 
-		toggle.onmouseover = function() {
-			    toggle.style.backgroundColor = '#242424';
-			    toggle.style.borderBottom = '8px solid #e91b24';
-			    toggle.style.color = '#fff';
-		  	}
-		toggle.onmouseout = function(){
-			    toggle.style.backgroundColor = '#fff';
-			    toggle.style.borderBottom = 'none';
-			    toggle.style.color = '#000';
+		for(var i = 0; i < navMenu.length; i++ ) {
+
+			navMenu[i].onmouseover = function(event) {
+				toggle.removeAttribute('id');
+				event.target.classList.add("nav__active");
+		  }
+
+		  navMenu[i].onmouseout = function(event) {
+		  	toggle.id = "toggle";
+			 	event.target.classList.remove('nav__active');
+		  }
 		}
-		for(var i = 0; i < subMenu.length; i++ ) {
 
-		 		subMenu[i].onmouseover = function(){
-			    toggle.style.backgroundColor = '#242424';
-			    toggle.style.borderBottom = '8px solid #e91b24';
-			    toggle.style.color = '#fff';
-		  	}
-		  	subMenu[i].onmouseout = function(){
-			    toggle.style.backgroundColor = '#fff';
-			    toggle.style.borderBottom = 'none';
-			    toggle.style.color = '#000';
-		  	}
-		 }  
-	}
+	});
+
